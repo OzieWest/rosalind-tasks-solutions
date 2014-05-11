@@ -1,11 +1,8 @@
 import math
-
-def read_file(file_name):
-	with open(file_name) as f:
-	    return f.readlines()
+import ext
 
 count = 0
-source = read_file('rosalind_hamm.txt')
+source = ext.read_file('rosalind_hamm.txt')
 
 for elm in source:
 	elm = elm.replace('\n', '')
