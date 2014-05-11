@@ -11,3 +11,10 @@ for val in rna_source:
 
 def rna_value_by_key(value):
 	return rna_dic[value]
+
+def all_indices(string, sub, listindex=[], offset=0):
+    i = string.find(sub, offset)
+    while i >= 0:
+        listindex.append(i)
+        i = string.find(sub, i + 1)
+    return listindex
