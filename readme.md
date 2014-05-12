@@ -1,0 +1,1 @@
+Some task from http://rosalind.info/problems/list-view/
