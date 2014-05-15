@@ -8,3 +8,5 @@ for char in unique:
 	result += str(data.count(char)) + ' '
 
 print result
+
+#------------------------------------------
