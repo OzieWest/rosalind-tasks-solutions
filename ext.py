@@ -90,3 +90,8 @@ def all_indices(string, sub, listindex=[], offset=0):
         listindex.append(i)
         i = string.find(sub, i + 1)
     return listindex
+
+def Fib(n):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return Fib(n-1)+Fib(n-2)

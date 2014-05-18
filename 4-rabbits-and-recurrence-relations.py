@@ -1,7 +1,11 @@
 # 5 3
-import math
 
-def Fib(n):
-    return ((1+math.sqrt(5))**n-(1-math.sqrt(5))**n)/(2**n*math.sqrt(5))
+inputA = 5
+inputB = 3
 
-print Fib(8)
+total = 1
+inter = 1
+for i in range(0, inputA):
+	total += inputB * inter
+	print total
+
