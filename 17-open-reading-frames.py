@@ -7,6 +7,7 @@ finalResult = {}
 fasta = ext.Fasta().fromFile('rosalind_orf.txt');
 key = fasta.getKeys()[0]
 source = fasta.data[key]
+source = 'AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG'
 
 revSource = ext.rev_and_conv(source)
 
@@ -28,11 +29,11 @@ def find_orf(resDic, source):
 				if(flagStart and len(elm) == 3):
 					sequence += ext.dna_codon_table[elm]
 
-			if(len(sequence) > 0 and flagStop):	
-				resDic[sequence] = 1				
+			if(len(sequence) > 0):	
+				resDic[sequence] = 1
 
 find_orf(finalResult, source)
 find_orf(finalResult, revSource)
 
 for i in finalResult:
-	print i
+ 	print i

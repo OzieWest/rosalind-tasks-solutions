@@ -1,11 +1,12 @@
-# 5 3
-
-inputA = 5
-inputB = 3
+n = 33
+k = 4
 
 total = 1
-inter = 1
-for i in range(0, inputA):
-	total += inputB * inter
-	print total
+count = 1
 
+for _ in range(0, n - 2):	
+	currentTotal = total
+	total = (total + k * count)
+	count = currentTotal
+
+print total
